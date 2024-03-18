@@ -3,30 +3,248 @@
 <head>
     <title>Profile</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="colorlib">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>PrismChrome</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,500,600|Roboto:400,700" rel="stylesheet">
+	<!--
+			CSS
+			============================================= -->
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    <header>
-        <h1>Profile</h1>
-    </header>
-    
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Write a brief description about yourself here.</p>
-        </section>
-        
-        <section>
-            <h2>Contact Information</h2>
-            <ul>
-                <li>Email: your-email@example.com</li>
-                <li>Phone: 123-456-7890</li>
-                <li>Address: 123 Main Street, City, State, ZIP</li>
-            </ul>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2022 Your Name</p>
-    </footer>
+    <!-- Start Header Area -->
+	<header id="header">
+		<div class="container main-menu">
+			<div class="row align-items-center d-flex">
+				<div id="logo">
+					<a href="index.html"><img src="img/logo.png" style="width=170" alt="" title="" /></a>
+				</div>
+				<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<li class=""><a class="active" href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li class="menu-has-children"><a href="#">Pages</a>
+							<ul>
+								<li><a href="elements.html">Elements</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="pricing.html">Pricing</a></li>
+								<li><a href="project-details.html">Project Details</a></li>
+							</ul>
+						</li>
+						<li class="menu-has-children"><a href="">Blog</a>
+							<ul>
+								<li><a href="blog-home.html">Blog Home</a></li>
+								<li><a href="blog-single.html">Blog Single</a></li>
+							</ul>
+						</li>
+						<li class="Profile"><a href="profile.html">Profile</a>
+						</li>
+						<button class="open-button" onclick="openForm()">Login</button></li>
+						<div class="form-popup" id="myForm">
+							<form action="/action_page.php" class="form-container">
+							  <h1>Login</h1>
+						  
+							  <label for="email"><b>Email</b></label>
+							  <input type="text" placeholder="Enter Email" name="email" required>
+						  
+							  <label for="psw"><b>Password</b></label>
+							  <input type="password" placeholder="Enter Password" name="psw" required>
+						  
+							  <button type="submit" class="btn">Login</button>
+							  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+							</form>
+						  </div>
+						  <script>
+							function openForm() {
+							  document.getElementById("myForm").style.display = "block";
+							}
+							
+							function closeForm() {
+							  document.getElementById("myForm").style.display = "none";
+							}
+							</script>
+						
+						
+						
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- End Header Area -->
+    <section class="section">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-12">
+              <div class="btn-group btn-group-toggle justify-content-center d-flex" data-toggle="buttons">
+                <label class="btn btn-sm btn-primary active">
+                  <input type="radio" name="shuffle-filter" value="all" checked="checked" />All
+                </label>
+                <label class="btn btn-sm btn-primary">
+                  <input type="radio" name="shuffle-filter" value="design" />UI/UX Design
+                </label>
+                <label class="btn btn-sm btn-primary">
+                  <input type="radio" name="shuffle-filter" value="branding" />BRANDING
+                </label>
+                <label class="btn btn-sm btn-primary">
+                  <input type="radio" name="shuffle-filter" value="illustration" />ILLUSTRATION
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="row shuffle-wrapper">
+            <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;,&quot;illustration&quot;]">
+              <div class="position-relative rounded hover-wrapper">
+                <img src="img/portfolio/item-1.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+                <div class="hover-overlay">
+                  <div class="hover-content">
+                    <a class="btn btn-light btn-sm" href="#!">view project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;branding&quot;]">
+              <div class="position-relative rounded hover-wrapper">
+                <img src="img/portfolio/item-2.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+                <div class="hover-overlay">
+                  <div class="hover-content">
+                    <a class="btn btn-light btn-sm" href="#!">view project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;illustration&quot;]">
+              <div class="position-relative rounded hover-wrapper">
+                <img src="img/portfolio/item-3.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+                <div class="hover-overlay">
+                  <div class="hover-content">
+                    <a class="btn btn-light btn-sm" href="#!">view project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;,&quot;branding&quot;]">
+              <div class="position-relative rounded hover-wrapper">
+                <img src="img/portfolio/item-6.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+                <div class="hover-overlay">
+                  <div class="hover-content">
+                    <a class="btn btn-light btn-sm" href="#!">view project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;illustration&quot;]">
+              <div class="position-relative rounded hover-wrapper">
+                <img src="img/portfolio/item-8.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+                <div class="hover-overlay">
+                  <div class="hover-content">
+                    <a class="btn btn-light btn-sm" href="#!">view project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;]">
+              <div class="position-relative rounded hover-wrapper">
+                <img src="img/portfolio/item-5.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+                <div class="hover-overlay">
+                  <div class="hover-content">
+                    <a class="btn btn-light btn-sm" href="#!">view project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;branding&quot;]">
+              <div class="position-relative rounded hover-wrapper">
+                <img src="img/portfolio/item-1.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+                <div class="hover-overlay">
+                  <div class="hover-content">
+                    <a class="btn btn-light btn-sm" href="#!">view project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;,&quot;illustration&quot;,&quot;branding&quot;]">
+              <div class="position-relative rounded hover-wrapper">
+                <img src="img/portfolio/item-3.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+                <div class="hover-overlay">
+                  <div class="hover-content">
+                    <a class="btn btn-light btn-sm" href="#!">view project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-6 mb-4 shuffle-item illustration" data-groups="[&quot;illustration&quot;]">
+              <div class="position-relative rounded hover-wrapper">
+                <img src="img/portfolio/item-7.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+                <div class="hover-overlay">
+                  <div class="hover-content">
+                    <a class="btn btn-light btn-sm" href="#!">view project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /portfolio -->
+      
+      <!-- clients -->
+      <section class="section bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="section-title">My Clients</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="client-logo-slider d-flex align-items-center">
+                <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+                    src="img/clients-logo/client-logo-1.png" alt="client-logo"></a>
+                <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+                    src="img/clients-logo/client-logo-2.png" alt="client-logo"></a>
+                <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+                    src="img/clients-logo/client-logo-3.png" alt="client-logo"></a>
+                <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+                    src="img/clients-logo/client-logo-4.png" alt="client-logo"></a>
+                <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+                    src="img/clients-logo/client-logo-5.png" alt="client-logo"></a>
+                <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+                    src="img/clients-logo/client-logo-1.png" alt="client-logo"></a>
+                <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+                    src="img/clients-logo/client-logo-2.png" alt="client-logo"></a>
+                <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+                    src="img/clients-logo/client-logo-3.png" alt="client-logo"></a>
+                <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+                    src="img/clients-logo/client-logo-4.png" alt="client-logo"></a>
+                <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+                    src="img/clients-logo/client-logo-5.png" alt="client-logo"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 </body>
 </html>
