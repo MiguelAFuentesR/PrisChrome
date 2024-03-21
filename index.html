@@ -29,6 +29,7 @@
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
@@ -47,21 +48,39 @@
 		<div class="container main-menu">
 			<div class="row align-items-center d-flex">
 				<div id="logo">
-					<a href="index.html"><img src="img/logo.png" style="width=170" alt="" title="" /></a>
+					<a href="index.html"><img src="img/logo.png" style="width: 170" alt="" title="" /></a>
 				</div>
 				<nav id="nav-menu-container">
 					<ul class="nav-menu">
 						<li class=""><a class="active" href="index.html">Home</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="projects.html">Projects</a></li>
-						<li class="menu-has-children"><a href="#">Pages</a>
-							<ul>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="contact.html">Contact</a></li>
-								<li><a href="pricing.html">Pricing</a></li>
-								<li><a href="License.html">License</a></li>
-							</ul>
-						</li>
+						<li><a href="License.html">License</a></li>
+						<li class="Profile"><a href="profile.html">Profile</a></li>
+						<button class="open-button" onclick="openForm()">Login</button></li>
+						<div class="form-popup" id="myForm">
+							<form action="/action_page.php" class="form-container">
+							  <h1>Login</h1>
+						  
+							  <label for="email"><b>Email</b></label>
+							  <input type="text" placeholder="Enter Email" name="email" required>
+						  
+							  <label for="psw"><b>Password</b></label>
+							  <input type="password" placeholder="Enter Password" name="psw" required>
+						  
+							  <button type="submit" class="btn">Login</button>
+							  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+							</form>
+						  </div>
+						  <script>
+							function openForm() {
+							  document.getElementById("myForm").style.display = "block";
+							}
+							
+							function closeForm() {
+							  document.getElementById("myForm").style.display = "none";
+							}
+							</script>
 					</ul>
 				</nav>
 			</div>
@@ -74,8 +93,8 @@
 		<div class="container-fluid">
 			<div class="row fullscreen d-flex align-items-center">
 				<div class="banner-content col-lg-4 col-md-8 justify-content-center ">
-					<h1 class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">Im<span>a</span>ges <br />
-						mat<span>t</span>er</h1>
+					<h1 class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">Protect your <span>vision</span>, 
+						share your <span>passion</span></h1>
 					<div class="designation mb-25 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
 						<p>Customize your profile with various protection options for your digital images. 
 							Select the security level per profile: high, medium, low, and free.</p>
@@ -125,7 +144,7 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.0s">
 						<div class="d-flex align-items-center mb-3">
-							<i class="flaticon-shirt"></i>
+							<img class="image img-fluid" src="img/20240321_104128_0000.png" alt="" style="width: 50px;">
 							<h4 class="ml-3">Digital Signature</h4>
 						</div>
 						<p>By scanning your fingerprint, we provide a unique and secure way to digitally sign your artistic creations. This innovative approach ensures the authenticity and integrity of your artworks, providing peace of mind for artists and collectors alike</p>
@@ -135,7 +154,7 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
 						<div class="d-flex align-items-center mb-3">
-							<i class="flaticon-water"></i>
+							<img class="image img-fluid" src="img/20240321_104129_0002.png" alt="" style="width: 50px;">
 							<h4 class="ml-3">License</h4>
 						</div>
 						<p>Manage your digital creations with ease using our Creative Commons licensing service. Customize licenses to specify usage terms for commercial or non-commercial purposes, with or without modifications. Simplify licensing so you can focus on creating and sharing content securely and legally</p>
@@ -145,7 +164,7 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
 						<div class="d-flex align-items-center mb-3">
-							<i class="flaticon-content"></i>
+							<img class="image img-fluid" src="img/20240321_104129_0004.png" alt="" style="width: 50px;">
 							<h4 class="ml-3">Blockchain</h4>
 						</div>
 						<p>Safeguard your intellectual property, enhance transparency, and foster trust among users. Our service streamlines the process, enabling you to leverage the benefits of blockchain technology with ease</p>
@@ -155,7 +174,7 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
 						<div class="d-flex align-items-center mb-3">
-							<i class="flaticon-art"></i>
+							<img class="image img-fluid" src="img/20240321_104128_0001.png" alt="" style="width: 50px;">
 							<h4 class="ml-3">Noise</h4>
 						</div>
 						<p>Enhance your data privacy with our noise injection service. By adding noise to digital files, we protect them from being used for artificial intelligence training purposes. Safeguard your sensitive information and maintain control over your digital assets</p>
@@ -165,7 +184,7 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
 						<div class="d-flex align-items-center mb-3">
-							<i class="flaticon-button"></i>
+							<img class="image img-fluid" src="img/20240321_104129_0003.png" alt="" style="width: 50px;">
 							<h4 class="ml-3">Recording in a database</h4>
 						</div>
 						<p>Store your digital art securely with our database storage service. Safeguard your creative masterpieces by storing them in our reliable and secure database. Whether you're an artist, collector, or curator, our service ensures easy access to your digital artworks whenever you need them</p>
@@ -175,7 +194,7 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
 						<div class="d-flex align-items-center mb-3">
-							<i class="flaticon-ring"></i>
+							<img class="image img-fluid" src="img/20240321_104129_0005.png" alt="" style="width: 50px;">
 							<h4 class="ml-3">Customizable Profile</h4>
 						</div>
 						<p>Tailor your digital asset protection with our customizable profile service. Choose from a range of options including Creative Commons licensing, blockchain integration, noise injection, and digital fingerprint signing. Whether you're an artist, content creator, or business, our service empowers you to select the level of protection that best suits your needs</p>
@@ -294,214 +313,106 @@
 	<section class="pricing-area section-gap-top">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-lg-11">
 					<div class="section-title text-center">
-						<h3>Pricing Plan</h3>
-						<h2><span>Choose</span> Your Package</h2>
+						<h3>Customizable Profil</h3>
+						<h2><span>Choose</span> Your Profile</h2>
 					</div>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-lg-4 col-md-6">
+				<div class="col-lg-3 col-md-6">
 					<div class="pricing_item">
-						<h3 class="p_title">Weeding</h3>
-						<p class="p_criteria">Attend only first day</p>
-						<h1 class="p_price">$46.00</h1>
+						<h3 class="p_title">BASIC</h3>
+						<p class="p_criteria">Free Profil</p>
+						<h1 class="p_price">$</h1>
 						<div class="p_list">
 							<ul>
-								<li><span class="ti-check"></span> Unlimited Entrance</li>
-								<li><span class="ti-check"></span> Unlimited Entrance</li>
-								<li><span class="ti-check"></span> Unlimited Entrance</li>
-								<li><span class="ti-close cross"></span> Unlimited Entrance</li>
-								<li><span class="ti-close cross"></span> Unlimited Entrance</li>
+								<li><span class="ti-check"></span> Recording in a database</li>
+								<li><span class="ti-check"></span> License</li>
+								<li><span class="ti-close cross"></span> Noise</li>
+								<li><span class="ti-close cross"></span> Blockchain</li>
+								<li><span class="ti-close cross"></span> Digital Signature</li>
 							</ul>
-							<a class="primary-btn mt-4" href="#" data-text="Book Now">
-								<span>B</span>
-								<span>o</span>
-								<span>o</span>
-								<span>k</span>
+							<a class="primary-btn mt-4" href="#" data-text="View More">
+								<span>V i e w</span>
 								<span> </span>
-								<span>N</span>
-								<span>o</span>
-								<span>w</span>
+								<span>M o r e</span>
 							</a>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-lg-4 col-md-6">
+				<div class="col-lg-3 col-md-6">
 					<div class="pricing_item">
-						<h3 class="p_title">Studio</h3>
-						<p class="p_criteria">Attend only first day</p>
-						<h1 class="p_price">$76.00</h1>
+						<h3 class="p_title">STANDARD</h3>
+						<p class="p_criteria">Low Level Profil</p>
+						<h1 class="p_price">$$</h1>
 						<div class="p_list">
 							<ul>
-								<li><span class="ti-check"></span> Unlimited Entrance</li>
-								<li><span class="ti-check"></span> Unlimited Entrance</li>
-								<li><span class="ti-check"></span> Unlimited Entrance</li>
-								<li><span class="ti-close cross"></span> Unlimited Entrance</li>
-								<li><span class="ti-close cross"></span> Unlimited Entrance</li>
+								<li><span class="ti-check"></span> Recording in a database</li>
+								<li><span class="ti-check"></span> License</li>
+								<li><span class="ti-check"></span> Noise</li>
+								<li><span class="ti-close cross"></span> Blockchain</li>
+								<li><span class="ti-close cross"></span> Digital Signature</li>
 							</ul>
-							<a class="primary-btn mt-4" href="#" data-text="Book Now">
-								<span>B</span>
-								<span>o</span>
-								<span>o</span>
-								<span>k</span>
+							<a class="primary-btn mt-4" href="#" data-text="View More">
+								<span>V i e w</span>
 								<span> </span>
-								<span>N</span>
-								<span>o</span>
-								<span>w</span>
+								<span>M o r e</span>
 							</a>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-lg-4 col-md-6">
+				<div class="col-lg-3 col-md-6">
 					<div class="pricing_item">
-						<h3 class="p_title">Fashion</h3>
-						<p class="p_criteria">Attend only first day</p>
-						<h1 class="p_price">$96.00</h1>
+						<h3 class="p_title">PLUS</h3>
+						<p class="p_criteria">Medium Level Profil</p>
+						<h1 class="p_price">$$$</h1>
 						<div class="p_list">
 							<ul>
-								<li><span class="ti-check"></span> Unlimited Entrance</li>
-								<li><span class="ti-check"></span> Unlimited Entrance</li>
-								<li><span class="ti-check"></span> Unlimited Entrance</li>
-								<li><span class="ti-close cross"></span> Unlimited Entrance</li>
-								<li><span class="ti-close cross"></span> Unlimited Entrance</li>
+								<li><span class="ti-check"></span> Recording in a database</li>
+								<li><span class="ti-check"></span> License</li>
+								<li><span class="ti-check"></span> Noise</li>
+								<li><span class="ti-check"></span> Blockchain</li>
+								<li><span class="ti-close cross"></span> Digital Signature</li>
 							</ul>
-							<a class="primary-btn mt-4" href="#" data-text="Book Now">
-								<span>B</span>
-								<span>o</span>
-								<span>o</span>
-								<span>k</span>
+							<a class="primary-btn mt-4" href="#" data-text="View More">
+								<span>V i e w</span>
 								<span> </span>
-								<span>N</span>
-								<span>o</span>
-								<span>w</span>
+								<span>M o r e</span>
 							</a>
 						</div>
 					</div>
 				</div>
+
+				<div class="col-lg-3 col-md-6">
+					<div class="pricing_item">
+						<h3 class="p_title">PRO</h3>
+						<p class="p_criteria">High level Profil</p>
+						<h1 class="p_price">$$$$</h1>
+						<div class="p_list">
+							<ul>
+								<li><span class="ti-check"></span> Recording in a database</li>
+								<li><span class="ti-check"></span> License</li>
+								<li><span class="ti-check"></span> Noise</li>
+								<li><span class="ti-check"></span> Blockchain</li>
+								<li><span class="ti-check"></span> Digital Signature</li>								
+							</ul>
+							<a class="primary-btn mt-4" href="#" data-text="View More">
+								<span>V i e w</span>
+								<span> </span>
+								<span>M o r e</span>
+							</a>
+						</div>
+					</div>
+				</div>		
 			</div>
 		</div>
 	</section>
 	<!-- End Pricing Area -->
-
-	<!-- Start Blog Area -->
-	<section class="blog-area section-gap-top">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="section-title text-center">
-						<h3>Our Blog</h3>
-						<h2><span>Latest</span> Good Story</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="single-recent-blog mb-lg-3 mb-5">
-						<div class="thumb">
-							<img class="f-img img-fluid mx-auto" src="img/b1.jpg" alt="">
-						</div>
-						<a href="#">
-							<h4 class="mt-4 mb-3">Pictures of the year 2018, from the migrant caravan to Serena do
-								Williams Harbor dangerous</h4>
-						</a>
-						<div class="mb-3 bottom d-flex justify-content-between align-items-center flex-wrap">
-							<div class="meta">
-								<span class="ti-user mr-1"></span> Admin
-								<span class="ti-calendar mr-1"></span> 20/09/2018
-							</div>
-						</div>
-						<p>
-							Unfeeling agreeable suffering it on smallness newspaper be. So come must
-							time no as. Do on unpleasing possession as of unreserved. Yet joy exquisite
-							put sometimes enjoyment perpetual now. Behind lovers eat having length horses
-							vanity say had its damn owes meter exquisite.
-						</p>
-					</div>
-				</div>
-
-				<div class="col-lg-6">
-					<div class="single-recent-blog mb-lg-3 mb-5">
-						<div class="row">
-							<div class="col-lg-6 col-md-5">
-								<div class="thumb">
-									<img class="f-img img-fluid mx-auto" src="img/b2.jpg" alt="">
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 mt-md-0 mt-3">
-								<a href="#">
-									<h4 class="mb-lg-3 mb-2">Spirits in the sky over Northern Ireland lake</h4>
-								</a>
-								<div class="bottom d-flex justify-content-between align-items-center flex-wrap mb-3">
-									<div class="meta">
-										<span class="ti-user mr-1"></span> Admin
-										<span class="ti-calendar mr-1"></span> 20/09/2018
-									</div>
-								</div>
-								<p>
-									Behind lovers eat having length horses vanity say had its mega.
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="single-recent-blog mb-lg-3 mb-5">
-						<div class="row">
-							<div class="col-lg-6 col-md-5">
-								<div class="thumb">
-									<img class="f-img img-fluid mx-auto" src="img/b3.jpg" alt="">
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 mt-md-0 mt-3">
-								<a href="#">
-									<h4 class="mb-lg-3 mb-2">Spirits in the sky over Northern Ireland lake</h4>
-								</a>
-								<div class="bottom d-flex justify-content-between align-items-center flex-wrap mb-3">
-									<div class="meta">
-										<span class="ti-user mr-1"></span> Admin
-										<span class="ti-calendar mr-1"></span> 20/09/2018
-									</div>
-								</div>
-								<p>
-									Behind lovers eat having length horses vanity say had its mega.
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="single-recent-blog mb-lg-3 mb-5">
-						<div class="row">
-							<div class="col-lg-6 col-md-5">
-								<div class="thumb">
-									<img class="f-img img-fluid mx-auto" src="img/b4.jpg" alt="">
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 mt-md-0 mt-3">
-								<a href="#">
-									<h4 class="mb-lg-3 mb-2">Spirits in the sky over Northern Ireland lake</h4>
-								</a>
-								<div class="bottom d-flex justify-content-between align-items-center flex-wrap mb-3">
-									<div class="meta">
-										<span class="ti-user mr-1"></span> Admin
-										<span class="ti-calendar mr-1"></span> 20/09/2018
-									</div>
-								</div>
-								<p>
-									Behind lovers eat having length horses vanity say had its mega.
-								</p>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Blog Area -->
 
 	<!-- start footer Area -->
 	<footer class="footer-area section-gap">

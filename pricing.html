@@ -45,22 +45,39 @@
           <div id="logo">
             <a href="index.html"><img src="img/logo.png" alt="" title=""/></a>
           </div>
-          <nav id="nav-menu-container">
-            <ul class="nav-menu">
-              <li class=""><a class="active" href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li class="menu-has-children">
-                <a href="#">Pages</a>
-                <ul>
-                  <li><a href="elements.html">Elements</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="pricing.html">Pricing</a></li>
-                  <li><a href="License.html">License</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
+		  <nav id="nav-menu-container">
+			<ul class="nav-menu">
+				<li class=""><a class="active" href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="License.html">License</a></li>
+				<li class="Profile"><a href="profile.html">Profile</a></li>
+				<button class="open-button" onclick="openForm()">Login</button></li>
+				<div class="form-popup" id="myForm">
+					<form action="/action_page.php" class="form-container">
+					  <h1>Login</h1>
+				  
+					  <label for="email"><b>Email</b></label>
+					  <input type="text" placeholder="Enter Email" name="email" required>
+				  
+					  <label for="psw"><b>Password</b></label>
+					  <input type="password" placeholder="Enter Password" name="psw" required>
+				  
+					  <button type="submit" class="btn">Login</button>
+					  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+					</form>
+				  </div>
+				  <script>
+					function openForm() {
+					  document.getElementById("myForm").style.display = "block";
+					}
+					
+					function closeForm() {
+					  document.getElementById("myForm").style.display = "none";
+					}
+					</script>
+			</ul>
+		</nav>
         </div>
       </div>
     </header>
