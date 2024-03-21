@@ -2209,10 +2209,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 .banner-content {
   text-align: left; }
   .banner-content h1 {
-    font-size: 120px;
-    font-weight: 600;
-    line-height: 120px;
-    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 10px;
     text-transform: uppercase; }
     @media (max-width: 991px) {
       .banner-content h1 br {
