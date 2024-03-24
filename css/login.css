@@ -10,9 +10,13 @@
   cursor: pointer;
   opacity: 0.8;
   position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
+  bottom: 560px;
+  right: 10px;
+  width: 180px;
+}
+
+.open-button:focus {
+    display: none;
 }
 
 /* The popup form - hidden by default */
