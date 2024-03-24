@@ -72,19 +72,7 @@
     			<label for="imagen">Choose your Image:</label><br> 
     			<input type="file" id="imagen" name="imagen" accept="image/*">
 			</form>
-		<div class="button-group-area mt-10">
-                        <a class= "genric-btn primary radius" id="Gallery"> Upload Image </a>
-						
-				<script>
-   					 // Añadimos un evento clic al botón con el id "selectButton"
-   					 document.getElementById("Gallery").addEventListener("click", function() {
-    	    				// Mostramos un mensaje de alerta al usuario
-        				alert("The Image has been successfully secured, now your art is safe.");
-        				// Redirigimos al usuario a la página de "upload"
-        				window.location.href = "License.html";
-    					});
-				</script>
-                    </div>
+		
 			 
                     
                     <div class="mt-10"></div> <!-- Add this empty div for white space -->
@@ -145,7 +133,7 @@
                             </div>
 
                      <div class="button-group-area mt-10">
-                        <a class= "genric-btn primary radius" id="CustomDone"> Save </a>
+                        <a class="primary-btn mt-4" data-text="SAVE" id="CustomDone"> <span> S A V E </a>
 						</div>
 					</div>
 				</div>
@@ -153,9 +141,9 @@
    					 // Añadimos un evento clic al botón con el id "selectButton"
    					 document.getElementById("CustomDone").addEventListener("click", function() {
     	    				// Mostramos un mensaje de alerta al usuario
-        				alert("All your changes have been successfully saved");
+        				alert("Your image has been successfully saved, now let's secure it.");
         				// Redirigimos al usuario a la página de "upload"
-        				window.location.href = "upload.html";
+        				window.location.href = "License.html";
     					});
 				</script>
                     </div>

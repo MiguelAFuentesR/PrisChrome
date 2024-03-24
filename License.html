@@ -74,12 +74,27 @@
 		</div>
 	</header>
 	<!-- End Header Area -->
+	  <div class="button-group-area mt-10">
+                        <a class="primary-btn mt-4" data-text="Done" id="GoProject"> <span>View my work</span> </a>
+						
+				<script>
+   					 // Añadimos un evento clic al botón con el id "selectButton"
+   					 document.getElementById("GoProject").addEventListener("click", function() {
+    	    				// Mostramos un mensaje de alerta al usuario
+        				alert("The Image has been successfully secured, now your art is safe.");
+        				// Redirigimos al usuario a la página de "upload"
+        				window.location.href = "projects.html";
+    					});
+				</script>
+ </div>
 
   <license-chooser></license-chooser>
+
 
 <!-- start footer Area -->
 <footer class="footer-area section-gap">
     <div class="container">
+    
       <div class="row">
         <div class="col-lg-5 col-md-6 col-sm-6">
           <div class="single-footer-widget">
