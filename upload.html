@@ -67,13 +67,21 @@
 		<div class="container">
 			<div class="portfolio_details_inner">
                 <div class="button-group-area mt-10">
-                        <a href="#" class="genric-btn info radius">Upload image</a>
-                    </div>
+                                    <!--AGREGAMOS LA FOTO QUE QUEREMOS PROTEGER -->
+                        <form action="/ruta/del/procesamiento" method="post" enctype="multipart/form-data">
+    			<label for="imagen">Choose your Image:</label><br> 
+    			<input type="file" id="imagen" name="imagen" accept="image/*">
+			</form>
+		
+			 
+                    
                     <div class="mt-10"></div> <!-- Add this empty div for white space -->
 				<div class="row">
                     <div class="button-group-area mt-10"></div>
+			
 					<div class="col-md-6">
 						<div class="left_img">
+						<h3> Your last safety image </h3>
 							<img class="img-fluid" src="img/project-details-1.jpg" alt="">
 						</div>
 					</div>
@@ -125,7 +133,19 @@
                             </div>
 
                      <div class="button-group-area mt-10">
-                        <a href="#" class="genric-btn primary radius">Process</a>
+                        <a class="primary-btn mt-4" data-text="SAVE" id="CustomDone"> <span> S A V E </a>
+						</div>
+					</div>
+				</div>
+				<script>
+   					 // Añadimos un evento clic al botón con el id "selectButton"
+   					 document.getElementById("CustomDone").addEventListener("click", function() {
+    	    				// Mostramos un mensaje de alerta al usuario
+        				alert("Your image has been successfully saved, now let's secure it.");
+        				// Redirigimos al usuario a la página de "upload"
+        				window.location.href = "License.html";
+    					});
+				</script>
                     </div>
 		</div>
   </div>
